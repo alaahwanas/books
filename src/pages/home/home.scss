@@ -1,3 +1,47 @@
-page-home {
 
+
+$colors: ( bg: #245372 );
+page-home {
 }
+
+
+h1 {
+  padding-top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family:'Segoe UI';
+  text-align: center;
+ color: white;
+}
+
+
+ion-buttons {
+  padding-top: 10px;
+  font-size: 40px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  opacity: 7;
+}
+
+
+
+.bg {
+  padding-bottom: 206px;
+  width : 100%;
+  height : 100%;
+ 
+  margin-left: -28px;
+  
+}
+
+.masters {
+  background-color: #245372;
+}
+
+
+
+
+
+
+
+
