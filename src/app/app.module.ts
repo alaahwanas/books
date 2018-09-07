@@ -19,10 +19,32 @@ import { SixthElPage } from '../pages/sixth-el/sixth-el';
 import { FirrstmidPage } from '../pages/firrstmid/firrstmid';
 import { SecondmidPage } from '../pages/secondmid/secondmid';
 import { ThirdmidPage } from '../pages/thirdmid/thirdmid';
-import { DocumentViewer } from '@ionic-native/document-viewer';
-import { FileOpener } from '@ionic-native/file-opener';
+
+import { ElmyPage } from '../pages/elmy/elmy';
+import { ForthElmyPage } from '../pages/forth-elmy/forth-elmy';
+import { FifthElmyPage } from '../pages/fifth-elmy/fifth-elmy';
+import { SixthElmyPage } from '../pages/sixth-elmy/sixth-elmy';
+
+import { AdabyPage } from '../pages/adaby/adaby';
+import { ForthAdabyPage } from '../pages/forth-adaby/forth-adaby';
+import { FifthAdabyPage } from '../pages/fifth-adaby/fifth-adaby';
+import { SixthAdabyPage } from '../pages/sixth-adaby/sixth-adaby';
+
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 
+var firebaseConfig = {
+  apiKey: "AIzaSyD5vQctxCdsMCbHjMyNUGBqt7fG1rnNQWw",
+  authDomain: "ionicbooks-af114.firebaseapp.com",
+  databaseURL: "https://ionicbooks-af114.firebaseio.com",
+  projectId: "ionicbooks-af114",
+  storageBucket: "ionicbooks-af114.appspot.com",
+  messagingSenderId: "379793939764"
+};
 
 
 
@@ -43,14 +65,26 @@ import { FileOpener } from '@ionic-native/file-opener';
     SixthElPage,
     FirrstmidPage,
     SecondmidPage,
-    ThirdmidPage
+    ThirdmidPage,
+    ElmyPage,
+    ForthElmyPage,
+    FifthElmyPage,
+    SixthElmyPage,
+    AdabyPage,
+    ForthAdabyPage,
+    FifthAdabyPage,
+    SixthAdabyPage
+    
 
   ],
   imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)    
-
+    BrowserModule, PdfViewerModule,
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireStorageModule
   ],
+
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
@@ -68,15 +102,23 @@ import { FileOpener } from '@ionic-native/file-opener';
     SixthElPage,
     FirrstmidPage,
     SecondmidPage,
-    ThirdmidPage
+    ThirdmidPage,
+    ElmyPage,
+    ForthElmyPage,
+    FifthElmyPage,
+    SixthElmyPage,
+    AdabyPage,
+    ForthAdabyPage,
+    FifthAdabyPage,
+    SixthAdabyPage
 
   ],
   providers: [
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    DocumentViewer,
-    FileOpener
+    InAppBrowser
+   
   ]
 })
 export class AppModule {}

@@ -1,28 +1,34 @@
 
 <ion-content class="stage">
 
+  <div class="bg">
+    <img src="assets/imgs/school.png">
+
+  </div>
+
+  <div class="choosestage">
+
+    <p text-center>
+      اختر المرحلة
+    </p>
 
 
-  <p text-center>
-    اختر المرحلة
-  </p>
-
-  
 
 
 
-
-  <ion-buttons text-center>
-    <button ion-button  color="light" clear (click)="goToElementry()">  المرحلة الابتدائية</button>
-  </ion-buttons>
 
     <ion-buttons text-center>
-      <button ion-button  color="light" clear (click)="goToMiddle()">  المرحلة المتوسطة </button>
+      <button ion-button color="light" clear (click)="goToElementry()">  المرحلة الابتدائية</button>
     </ion-buttons>
 
     <ion-buttons text-center>
-      <button ion-button  color="light" clear (click)="goToHigh()">  المرحلة الاعدادية </button>
+      <button ion-button color="light" clear (click)="goToMiddle()">  المرحلة المتوسطة </button>
     </ion-buttons>
 
+    <ion-buttons text-center>
+      <button ion-button color="light" clear (click)="goToHigh()">  المرحلة الاعدادية </button>
+    </ion-buttons>
+
+  </div>
 
 </ion-content>

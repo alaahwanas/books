@@ -29,10 +29,13 @@ export class MiddlePage {
   goToFirstMid() {
 
     this.navCtrl.push(FirrstmidPage);
-  } goToSecondMid() {
+  }
+  goToSecondMid() {
 
     this.navCtrl.push(SecondmidPage);
-  } goToThirdMid() {
+  }
+
+  goToThirdMid() {
 
     this.navCtrl.push(ThirdmidPage);
   }

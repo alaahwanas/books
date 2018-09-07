@@ -22,4 +22,49 @@ export class ThirdElPage {
     console.log('ionViewDidLoad ThirdElPage');
   }
 
+
+
+
+  openKuran = function (link) {
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openKeraa = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+
+
+
+  openElom = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openElomPractice = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openMath = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openMathpractice = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
 }

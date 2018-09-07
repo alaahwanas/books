@@ -22,4 +22,65 @@ export class FourthElPage {
     console.log('ionViewDidLoad FourthElPage');
   }
 
+  openKuranForthEl = function (link) {
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openKeraaForthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+
+
+
+  openElomForthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openElomPracticeForthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openMathForthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openSocialForthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openQawaedForthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openEnglish = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openEnghlishPractice = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
 }

@@ -13,34 +13,37 @@
 </ion-header>
 
 
-<ion-content class="elementryschool" >
+<ion-content class="elementryschool">
+  <div class="bg">
+    <img src="assets/imgs/school.png">
 
-  <p text-center>
-    اختر الصف
-  </p>
+  </div>
 
+  <div class="chooseElClass">
+    <p text-center>اختر الصف</p>
 
+      <ion-buttons text-center  class="buttonSpace">
+        <button ion-button color="light" clear (click)="goToFirstEl()">  الصف الاول الابتدائي</button>
+      </ion-buttons>
 
-  
-  <ion-buttons text-center>
-    <button ion-button color="light" clear (click)="goToFirstEl()">  الصف الاول الابتدائي</button>
-  </ion-buttons>
+      <ion-buttons text-center  class="buttonSpace">
+        <button ion-button color="light" clear (click)="goToSecondEl()">  الصف الثاني الابتدائي </button>
+      </ion-buttons>
 
-  <ion-buttons text-center>
-    <button ion-button color="light" clear (click)="goToSecondEl()">  الصف الثاني الابتدائي </button>
-  </ion-buttons>
+      <ion-buttons text-center  class="buttonSpace">
+        <button ion-button color="light" clear (click)="goToThirdEl()">  الصف الثالث الابتدائي </button>
+      </ion-buttons>
+      <ion-buttons text-center  class="buttonSpace">
+        <button ion-button color="light" clear (click)="goToFourthEl()">  الصف الرابع الابتدائي </button>
+      </ion-buttons>
 
-  <ion-buttons text-center>
-    <button ion-button color="light" clear (click)="goToThirdEl()">  الصف الثالث الابتدائي </button>
-  </ion-buttons>
-  <ion-buttons text-center>
-    <button ion-button color="light" clear (click)="goToFourthEl()">  الصف الرابع الابتدائي </button>
-  </ion-buttons>
+      <ion-buttons text-center  class="buttonSpace">
+        <button ion-button color="light" clear (click)="goTofifthEl()">  الصف الخامس الابتدائي </button>
+      </ion-buttons>
+      <ion-buttons text-center  class="buttonSpace">
+        <button ion-button color="light" clear (click)="goToSixthEl()">  الصف السادس الابتدائي </button>
+      </ion-buttons>
+    
+  </div>
 
-  <ion-buttons text-center>
-    <button ion-button color="light" clear (click)="goTofifthEl()">  الصف الخامس الابتدائي </button>
-  </ion-buttons>
-  <ion-buttons text-center>
-    <button ion-button color="light" clear (click)="goToSixthEl()">  الصف السادس الابتدائي </button>
-  </ion-buttons>
 </ion-content>

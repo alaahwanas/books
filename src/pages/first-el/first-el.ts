@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
-import { FileOpener } from '@ionic-native/file-opener';
+
 
 /**
  * Generated class for the FirstElPage page.
@@ -14,29 +13,73 @@ import { FileOpener } from '@ionic-native/file-opener';
 @Component({
   selector: 'page-first-el',
   templateUrl: 'first-el.html',
-  })
+})
+
+
 
 export class FirstElPage {
+  
+  pdfSrc;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private document: DocumentViewer, private fileOpener: FileOpener) {
+
+    
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FirstElPage');
   }
 
+ 
+  openKuran = function (link) {
+    window.open(link, '_system', 'location = 0');
+
+    };
     
-  openKuran() {
 
-    const options: DocumentViewerOptions = {
-      title: 'My PDF'
-    }
-    this.document.viewDocument('assets\test.pdf', 'application/pdf', options);
-  }
+  openKeraa = function (link) {
+        
+      window.open(link, '_system', 'location = 0');
 
-
-  openKeraa() {
+    };
+  
     
-    }
+  
 
+
+  openElom = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+  
+  openElomPractice = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openMath = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+  
+
+  openMathpractice = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  
+
+  openEnglish = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+ 
 }

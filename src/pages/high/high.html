@@ -7,27 +7,49 @@
 <ion-header>
 
   <ion-navbar color="bg">
-    <ion-title>high</ion-title>
+    <ion-title>المرحله الاعدادية</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content class="highschool">
-  <p text-center>
-    اختر الفرع
-  </p>
+  <div class="bg">
+    <img src="assets/imgs/school.png">
 
+  </div>
 
+  <div class="chooseHighClass">
 
+    <p text-center>
+      اختر الصف
+    </p>
 
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="goToForthAdaby()">  الصف الرابع الأدبي</button>
+    </ion-buttons>
 
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="goToForthElmy()"> الصف الرابع العلمي </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="goToFifthAdaby()"> الصف الخامس الأدبي </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="goToFifthElmyAplied()"> الصف الخامس العلمي التطبيقي </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="goToFifthElmyBio()"> الصف الخامس العلمي الأحيائي </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="goToSixthAdaby()"> الصف السادس الأدبي </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="goToSixthElmyAplied()"> الصف السادس العلمي التطبيقي </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="goToSixthElmyBio()"> الصف السادس العلمي الأحيائي </button>
+    </ion-buttons>
 
-  <ion-buttons text-center>
-    <button ion-button color="light" clear (click)="goToElementry()">  الفرع العلمي</button>
-  </ion-buttons>
-
-  <ion-buttons text-center>
-    <button ion-button color="light" clear (click)="goToMiddle()"> الفرع الادبي </button>
-  </ion-buttons>
+  </div>
 </ion-content>

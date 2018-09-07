@@ -5,3 +5,29 @@ page-first-el {
   background-color: #245372;
   padding-bottom: 20px;
 }
+
+.viewer {
+  width: 100%;
+  padding-top: -50px;
+}
+
+
+.bg {
+  max-width: 150%;
+  border: 0;
+  opacity: 0.3;
+  margin-left: -28px;
+ 
+}
+.choosebook {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+.pdf-viewer {
+  width: 100%;
+}
+
+.textLayer {
+  width: 100%;
+}

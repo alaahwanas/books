@@ -22,4 +22,77 @@ export class SecondmidPage {
     console.log('ionViewDidLoad SecondmidPage');
   }
 
+
+  openKuran = function (link) {
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openKeraa = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openKeraaTwo = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+
+
+  openElom = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openElomPractice = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openMath = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openMathpractice = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openHistory = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openGeography = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openWataniya = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+  
+  openEnglish = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
 }

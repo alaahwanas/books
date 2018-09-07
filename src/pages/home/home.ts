@@ -8,7 +8,12 @@ import { SelectStagePage } from '../select-stage/select-stage';
 })
 export class HomePage {
 
+
+
   constructor(public navCtrl: NavController) {
+
+
+
 
   }
 

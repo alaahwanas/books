@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\assets",
-    "\\src\\assets\\imgs",
-    "\\src\\pages"
+    "\\src\\pages",
+    "\\src\\pages\\fifth-elmy",
+    "\\src\\pages\\thirdmid"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\src\\pages\\fifth-elmy\\fifth-elmy.html",
   "PreviewInSolutionExplorer": false
 }

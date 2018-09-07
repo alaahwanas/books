@@ -22,4 +22,59 @@ export class FifthElPage {
     console.log('ionViewDidLoad FifthElPage');
   }
 
+
+  openKuranFifthEl = function (link) {
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openKeraaFifthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+
+
+
+  openElomFifthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openElomPracticeFifthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+  openMathFifthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openSocialFifthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
+
+  openQawaedFifthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+  
+  openEnglishFifthEl = function (link) {
+
+    window.open(link, '_system', 'location = 0');
+
+  };
+
 }

@@ -7,12 +7,65 @@
 <ion-header>
 
   <ion-navbar color="bg">
-    <ion-title>thirdmid</ion-title>
+    <ion-title>الصف الثالث المتوسط</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="thirdmid">
+  <div class="bg">
+    <img src="assets/imgs/school.png">
+
+  </div>
+
+  <div class="choosebook">
+    <p text-center>
+      اختر الكتاب
+    </p>
+
+    <pdf-viewer [src]="pdfScr"
+                [render-text]="true"
+                style="display: block;"
+                [fit-to-page]="true"
+                [show-all]="true"></pdf-viewer>
+
+
+
+
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)=" openKuran('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9.pdf?alt=media&token=56d1764f-4ec1-4cb5-82da-079d174c1267')">  القران الكريم </button>
+    </ion-buttons>
+
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openAdab('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%A7%D9%84%D8%A7%D8%AF%D8%A8%20%D9%88%D8%A7%D9%84%D9%86%D8%B5%D9%88%D8%B5.pdf?alt=media&token=e8f7eb10-dbf3-4b30-b425-14db1af4af51')">  الأدب والنصوص </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openQawaed('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.pdf?alt=media&token=b5ff2f7f-9c37-48cd-aa9e-e9b897f8da60')">  قواعد اللغة العربية </button>
+    </ion-buttons>
+
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openPhysics('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%A7%D9%84%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1.pdf?alt=media&token=415c4f54-3be5-439d-a306-1f30ea0a57fe')">  الفيزياء </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openChemist('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%A7%D9%84%D9%83%D9%8A%D9%85%D9%8A%D8%A7%D8%A1.pdf?alt=media&token=cf10ee3e-bdef-427a-8cd7-c6b869deeef5')"> الكيمياء </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openBiology('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%B9%D9%84%D9%85%20%D8%A7%D9%84%D8%A7%D8%AD%D9%8A%D8%A7%D8%A1.pdf?alt=media&token=95f390fb-1365-4614-bf6b-b900bd236c30')"> الأحياء </button>
+    </ion-buttons>
+
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openMath('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA.pdf?alt=media&token=208362ae-078f-4a0d-852d-d57885441da8')">  الرياضيات </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openHistory('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE.pdf?alt=media&token=e52f0a7b-c529-4a56-97cd-1bdcacb632ee')"> التاريخ </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openGeography('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82.pdf?alt=media&token=63b8f857-d986-40ba-b3e2-102795001f84')"> جغرافية العراق </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openWataniya('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fthird%20middle%2F%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9.pdf?alt=media&token=a86e03f6-483f-464d-9682-3fbd3710ee43')"> التربية الوطنية والاجتماعية </button>
+    </ion-buttons>
+  </div>
 
 </ion-content>
