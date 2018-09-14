@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\app",
+    "\\src\\assets",
     "\\src\\pages",
-    "\\src\\pages\\fifth-elmy",
-    "\\src\\pages\\thirdmid"
+    "\\src\\pages\\elementry",
+    "\\src\\pages\\view-pdf"
   ],
-  "SelectedNode": "\\src\\pages\\fifth-elmy\\fifth-elmy.html",
+  "SelectedNode": "\\src\\pages\\elementry\\elementry.scss",
   "PreviewInSolutionExplorer": false
 }

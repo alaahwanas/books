@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Modal, ModalController } from 'ionic-angular';
+import { ViewPdfPage } from '../view-Pdf/view-Pdf';
 
 /**
  * Generated class for the ThirdElPage page.
@@ -15,7 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ThirdElPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public modalCtrl: ModalController, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -25,46 +26,89 @@ export class ThirdElPage {
 
 
 
-  openKuran = function (link) {
-    window.open(link, '_system', 'location = 0');
+  openKuran(): void {
+    let modal: Modal = this.modalCtrl.create(ViewPdfPage, {
+      displayData: {
+        pdfSource: {
+          url: 'https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fthird%2F%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85.pdf?alt=media&token=0c4f3966-dc74-40be-ae52-7080c12baacb'
 
-  };
-
-
-  openKeraa = function (link) {
-
-    window.open(link, '_system', 'location = 0');
-
-  };
-
-
-
+        },
+        title: 'القراَن الكريم'
+      }
+    });
+    modal.present();
+  }
 
 
-  openElom = function (link) {
+  openKeraa(): void {
+    let modal: Modal = this.modalCtrl.create(ViewPdfPage, {
+      displayData: {
+        pdfSource: {
+          url: 'https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fthird%2F%D9%82%D8%B1%D8%A7%D8%A6%D8%AA%D9%8A.pdf?alt=media&token=ef1b9935-4ea8-402b-a01e-b0ccef4ecc8d'
 
-    window.open(link, '_system', 'location = 0');
-
-  };
-
-  openElomPractice = function (link) {
-
-    window.open(link, '_system', 'location = 0');
-
-  };
-
-  openMath = function (link) {
-
-    window.open(link, '_system', 'location = 0');
-
-  };
+        },
+        title: 'قراءتي'
+      }
+    });
+    modal.present();
+  }
 
 
-  openMathpractice = function (link) {
 
-    window.open(link, '_system', 'location = 0');
 
-  };
+
+  openElom(): void {
+    let modal: Modal = this.modalCtrl.create(ViewPdfPage, {
+      displayData: {
+        pdfSource: {
+          url: 'https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fthird%2F%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85.pdf?alt=media&token=312ed932-9894-488f-9bce-51ea4d5cd43b'
+
+        },
+        title: 'العلوم'
+      }
+    });
+    modal.present();
+  }
+
+  openElomPractice(): void {
+    let modal: Modal = this.modalCtrl.create(ViewPdfPage, {
+      displayData: {
+        pdfSource: {
+          url: 'https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fthird%2F%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D9%86%D8%B4%D8%A7%D8%B7.pdf?alt=media&token=cf6dbb18-140a-401f-b71d-a9247e6863d7'
+
+        },
+        title: 'العلوم تمرينات'
+      }
+    });
+    modal.present();
+  }
+
+  openMath(): void {
+    let modal: Modal = this.modalCtrl.create(ViewPdfPage, {
+      displayData: {
+        pdfSource: {
+          url: 'https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fthird%2F%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA.pdf?alt=media&token=b78322e6-2b0c-459c-9056-6631b21f80af'
+
+        },
+        title: 'الرياضيات'
+      }
+    });
+    modal.present();
+  }
+
+
+  openMathpractice(): void {
+    let modal: Modal = this.modalCtrl.create(ViewPdfPage, {
+      displayData: {
+        pdfSource: {
+          url: 'https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fthird%2F%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA%20%D8%AA%D9%85%D8%B1%D9%8A%D9%86%D8%A7%D8%AA.pdf?alt=media&token=390e1597-b8c5-48db-90c6-b7dedc41e8d2'
+
+        },
+        title: 'الرياضيات تمرينات'
+      }
+    });
+    modal.present();
+  }
 
 
 }

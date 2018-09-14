@@ -24,50 +24,46 @@
       اختر الكتاب
     </p>
 
-    <pdf-viewer [src]="pdfScr"
-                [render-text]="true"
-                style="display: block;"
-                [fit-to-page]="true"
-                [show-all]="true"></pdf-viewer>
+    
 
 
 
 
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)=" openKuran('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9.pdf?alt=media&token=61c34e9f-f54d-4c14-b3e1-6bc8af432bc5')">  القران الكريم </button>
+      <button ion-button color="light" clear (click)=" openKuran()">  القران الكريم </button>
     </ion-buttons>
 
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openKeraa('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%A7%D9%88%D9%84.pdf?alt=media&token=135b2ff4-8f65-439f-978e-d5d68e91f124')">  اللغة العربية الجزء الاول</button>
+      <button ion-button color="light" clear (click)="openKeraa()">  اللغة العربية الجزء الاول</button>
     </ion-buttons>
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openKeraaTwo('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A.pdf?alt=media&token=e8263fc6-c2ce-460d-acbe-3d30ead8dce5')">  اللغة العربية الجزء الثاني</button>
-    </ion-buttons>
-
-    <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openElom('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%A7%D9%88%D9%84.pdf?alt=media&token=3c4b30d7-1c91-4be5-9046-e56deed6d7c4')">  العلوم الجزء الاول </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openElomPractice('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A.pdf?alt=media&token=649474b5-5e44-41d1-8fb2-fd42a2ac286e')">  العلوم الجزء الثاني </button>
+      <button ion-button color="light" clear (click)="openKeraaTwo()">  اللغة العربية الجزء الثاني</button>
     </ion-buttons>
 
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openMath('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%A7%D9%88%D9%84.pdf?alt=media&token=c5811947-03b7-458f-ac80-7ee49cf5d331')">  الرياضيات الجزء الاول  </button>
+      <button ion-button color="light" clear (click)="openElom()">  العلوم الجزء الاول </button>
     </ion-buttons>
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openMathpractice('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A.pdf?alt=media&token=00364b57-42d2-475c-9a8d-73885d678610')">  الرياضيات الجزء الثاني </button>
+      <button ion-button color="light" clear (click)="openElomPractice()">  العلوم الجزء الثاني </button>
+    </ion-buttons>
+
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openMath()">  الرياضيات الجزء الاول  </button>
     </ion-buttons>
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openHistory('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE.pdf?alt=media&token=253e78bf-9e38-418a-8c8d-338f73064279')">  التاريخ </button>
+      <button ion-button color="light" clear (click)="openMathpractice()">  الرياضيات الجزء الثاني </button>
     </ion-buttons>
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openGeography('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A.pdf?alt=media&token=5ec760f5-ec3b-404f-996f-5922063a2287')">  جغرافية الوطن العربي </button>
+      <button ion-button color="light" clear (click)="openHistory()">  التاريخ </button>
     </ion-buttons>
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openWataniya('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9.pdf?alt=media&token=5ebdff66-bf0a-47a8-b88f-61731ec49da5')">  التربية الوطنية </button>
+      <button ion-button color="light" clear (click)="openGeography()">  جغرافية الوطن العربي </button>
     </ion-buttons>
     <ion-buttons text-center class="stylebutton1">
-      <button ion-button color="light" clear (click)="openEnglish('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D8%A7%D9%86%D9%83%D9%84%D9%8A%D8%B2%D9%8A.pdf?alt=media&token=ae8f764f-d036-4c4b-8216-c0080cefb13b')">  اللغة الانكليزية  </button>
+      <button ion-button color="light" clear (click)="openWataniya()">  التربية الوطنية </button>
+    </ion-buttons>
+    <ion-buttons text-center class="stylebutton1">
+      <button ion-button color="light" clear (click)="openEnglish()">  اللغة الانكليزية  </button>
     </ion-buttons>
   </div>
 

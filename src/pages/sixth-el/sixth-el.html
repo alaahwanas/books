@@ -24,45 +24,41 @@
     </p>
 
 
-    <pdf-viewer [src]="pdfScr"
-                [render-text]="true"
-                style="display: block;"
-                [fit-to-page]="true"
-                [show-all]="true"></pdf-viewer>
+    
 
 
 
 
 
     <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)=" openKuran('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fsixth%2F%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85%20%D9%88%D8%A7%D9%84%D8%AA%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9.pdf?alt=media&token=443f2101-e6b8-4bde-b033-d5cf1ad0bd7b')">  القران الكريم </button>
+      <button ion-button color="light" clear (click)=" openKuran()">  القران الكريم </button>
     </ion-buttons>
 
     <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="openKeraa('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fsixth%2F%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%A1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.pdf?alt=media&token=5ba16782-9560-488f-81b9-305aa4320eb7')">  القراءة العربية </button>
+      <button ion-button color="light" clear (click)="openKeraa()">  القراءة العربية </button>
     </ion-buttons>
 
     <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="openQawaed('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fsixth%2F%D9%82%D9%88%D8%A7%D8%B9%D8%AF%20%D8%A7%D9%84%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.pdf?alt=media&token=e5aaf142-54ee-4306-8946-c3fa2dbb6d68')">  قواعد اللغة العربية </button>
+      <button ion-button color="light" clear (click)="openQawaed()">  قواعد اللغة العربية </button>
     </ion-buttons>
 
     <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="openElom('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fsixth%2F%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85.pdf?alt=media&token=0ea98909-509b-4ea1-b4b9-f75bccb52805')">  العلوم </button>
+      <button ion-button color="light" clear (click)="openElom()">  العلوم </button>
     </ion-buttons>
     <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="openElomPractice('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fsixth%2F%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20%D8%AA%D9%85%D8%B1%D9%8A%D9%86%D8%A7%D8%AA.pdf?alt=media&token=ff765992-cc4b-44c2-805f-9a842cc85df6')">  العلوم تمرينات </button>
-    </ion-buttons>
-
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="openMath('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fsixth%2F%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA.pdf?alt=media&token=70487ee5-b1a7-493d-bf29-722202307372')">  الرياضيات </button>
+      <button ion-button color="light" clear (click)="openElomPractice()">  العلوم تمرينات </button>
     </ion-buttons>
 
     <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="openSocials('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fsixth%2F%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A7%D8%AA.pdf?alt=media&token=74126868-2d6f-44c1-be30-583ae5571008')">  الأجتماعيات </button>
+      <button ion-button color="light" clear (click)="openMath()">  الرياضيات </button>
     </ion-buttons>
 
     <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="openEnglish('https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/elementry%2Fsixth%2F%D8%A7%D9%84%D8%A7%D9%86%D9%83%D9%84%D9%8A%D8%B2%D9%8A.pdf?alt=media&token=c246ef41-73a6-4144-8990-993eec6df49f')"> اللغة الأنكليزية </button>
+      <button ion-button color="light" clear (click)="openSocials()">  الأجتماعيات </button>
+    </ion-buttons>
+
+    <ion-buttons text-center class="stylebutton2">
+      <button ion-button color="light" clear (click)="openEnglish()"> اللغة الأنكليزية </button>
     </ion-buttons>
   </div>
 

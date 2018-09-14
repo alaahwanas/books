@@ -20,6 +20,7 @@ import { SixthElPage } from '../sixth-el/sixth-el';
   templateUrl: 'elementry.html',
 })
 export class ElementryPage {
+  pdfSrc
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

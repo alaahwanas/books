@@ -36,6 +36,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
+import { ViewPdfPage } from '../pages/view-Pdf/view-Pdf';
+
+
+ViewPdfPage
 
 var firebaseConfig = {
   apiKey: "AIzaSyD5vQctxCdsMCbHjMyNUGBqt7fG1rnNQWw",
@@ -73,7 +77,8 @@ var firebaseConfig = {
     AdabyPage,
     ForthAdabyPage,
     FifthAdabyPage,
-    SixthAdabyPage
+    SixthAdabyPage,
+    ViewPdfPage
     
 
   ],
@@ -110,7 +115,8 @@ var firebaseConfig = {
     AdabyPage,
     ForthAdabyPage,
     FifthAdabyPage,
-    SixthAdabyPage
+    SixthAdabyPage,
+    ViewPdfPage
 
   ],
   providers: [
