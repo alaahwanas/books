@@ -9,59 +9,85 @@
     <ion-header>
 
       <ion-navbar color="bg">
-        <ion-title>الصف الاول الابتدائي</ion-title>
+
+        <div class="navbar">
+
+          <ion-title class="titleicon">الصف الأول الأبتدائي</ion-title>
+        </div>
+        <div class="navbarimag">
+
+          <button ion-button icon-only (click)="goTHome()">
+            <ion-icon name="ios-home"></ion-icon>
+          </button>
+        </div>
+
       </ion-navbar>
 
     </ion-header>
+اٍ
 
-
-    <ion-content class="firstEl">
-      <div class="bg">
-        <img src="assets/imgs/school.png">
-
-      </div>
-
-      <div class="choosebook">
-        <p text-center>
-          اختر الكتاب
-        </p>
-
-         
+    <ion-content class="chooseclass">
 
 
 
-        <ion-buttons text-center  class="stylebutton">
+      <ion-list>
+        <ion-list-header>
+        </ion-list-header>
+
+        <ion-item text-right>
           <button ion-button color="light" clear (click)=" openKuran()">  القران الكريم </button>
-        </ion-buttons>
+          <ion-thumbnail item-end>
+            <img src="../assets/imgs/choosebook.png">
+          </ion-thumbnail>
+        </ion-item>
 
-        <ion-buttons text-center  class="stylebutton">
+        <ion-item text-right>
           <button ion-button color="light" clear (click)=" openKeraa()">  قراءتي </button>
-        </ion-buttons>
+          <ion-thumbnail item-end>
+            <img src="../assets/imgs/choosebook.png">
+          </ion-thumbnail>
+        </ion-item>
 
-        <ion-buttons text-center  class="stylebutton">
+        <ion-item text-right>
           <button ion-button color="light" clear (click)="openElom()">  العلوم </button>
-        </ion-buttons>
-        <ion-buttons text-center  class="stylebutton">
+          <ion-thumbnail item-end>
+            <img src="../assets/imgs/choosebook.png">
+          </ion-thumbnail>
+        </ion-item>
+        <ion-item text-right>
           <button ion-button color="light" clear (click)="openElomPractice()">  العلوم تمرينات </button>
-        </ion-buttons>
+          <ion-thumbnail item-end>
+            <img src="../assets/imgs/choosebook.png">
+          </ion-thumbnail>
+        </ion-item>
 
-        <ion-buttons text-center  class="stylebutton">
+        <ion-item text-right>
           <button ion-button color="light" clear (click)="openMath()">  الرياضيات </button>
-        </ion-buttons>
-        <ion-buttons text-center  class="stylebutton">
+          <ion-thumbnail item-end>
+            <img src="../assets/imgs/choosebook.png">
+          </ion-thumbnail>
+        </ion-item>
+
+        <ion-item text-right>
           <button ion-button color="light" clear (click)="openMathpractice()">  الرياضيات تمرينات </button>
-        </ion-buttons>
-        <ion-buttons text-center  class="stylebutton">
+          <ion-thumbnail item-end>
+            <img src="../assets/imgs/choosebook.png">
+          </ion-thumbnail>
+        </ion-item>
+
+        <ion-item text-right>
           <button ion-button color="light" clear (click)="openEnglish()"> اللغة الأنكليزية </button>
-        </ion-buttons>
+          <ion-thumbnail item-end>
+            <img src="../assets/imgs/choosebook.png">
+          </ion-thumbnail>
+        </ion-item>
+
+
+
+      </ion-list>
 
 
 
 
-      </div>
 
-         
-
-
-
-</ion-content>
+    </ion-content>

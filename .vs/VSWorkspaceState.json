@@ -3,11 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\assets",
     "\\src\\pages",
-    "\\src\\pages\\elementry",
-    "\\src\\pages\\view-pdf"
+    "\\src\\pages\\signin",
+    "\\src\\pages\\singup",
+    "\\src\\pages\\user-profile-update",
+    "\\src\\providers\\auth-service",
+    "\\src\\providers\\comments",
+    "\\src\\providers\\user-service"
   ],
-  "SelectedNode": "\\src\\pages\\elementry\\elementry.scss",
+  "SelectedNode": "\\src\\pages\\user-profile-update\\user-profile-update.scss",
   "PreviewInSolutionExplorer": false
 }

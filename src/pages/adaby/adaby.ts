@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Modal, ModalController } from 'ionic-angular';
 import { ViewPdfPage } from '../view-Pdf/view-Pdf';
+import { TabsPage } from '../tabs/tabs';
+
 /**
  * Generated class for the AdabyPage page.
  *
@@ -114,5 +116,8 @@ export class AdabyPage {
     modal.present();
   }
 
+  goTHome() {
+    this.navCtrl.push(TabsPage);
 
+  }
 }

@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FirrstmidPage } from '../firrstmid/firrstmid';
 import { SecondmidPage } from '../secondmid/secondmid';
 import { ThirdmidPage } from '../thirdmid/thirdmid';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the MiddlePage page.
@@ -38,6 +39,11 @@ export class MiddlePage {
   goToThirdMid() {
 
     this.navCtrl.push(ThirdmidPage);
+  }
+
+  goTHome() {
+    this.navCtrl.push(TabsPage);
+
   }
 }
 

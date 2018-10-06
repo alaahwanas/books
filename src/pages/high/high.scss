@@ -1,17 +1,27 @@
 page-high {
 
-}
-.highschool {
-  background-color: #245372;
-  padding-bottom: 20px;
-}
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    pointer-events: auto;
+    font-family: Dubai;
+  }
 
-.chooseHighClass {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -90%);
-}
+  .navbar {
+    align-items: center;
+  }
 
-.stylebutton2 {
-  margin: -20px;
+  .navbarimag {
+    float: right;
+  }
+
+  .button-clear-ios-light {
+    color: #7B52AB;
+  }
+
+  .button[icon-only] {
+    background-color: #522B83;
+  }
 }

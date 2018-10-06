@@ -1,21 +1,28 @@
 page-secondmid {
 
-}
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    pointer-events: auto;
+    font-family: Dubai;
+  }
 
+  .navbar {
+    align-items: center;
+  }
 
-.secondmid {
-  background-color: #245372;
-  padding-bottom: 20px;
-}
+  .navbarimag {
+    float: right;
+  }
 
+  .button-clear-ios-light {
+    color: #7B52AB;
+  }
 
+  .button[icon-only] {
+    background-color: #522B83;
+  }
 
-.stylebutton1 {
-  margin: -33px;
-  margin-bottom: 1px;
-}
-
-
-.stylebutton4 {
-  margin: -33px;
 }

@@ -7,49 +7,79 @@
 <ion-header>
 
   <ion-navbar color="bg">
-    <ion-title>المرحله الاعدادية</ion-title>
+
+    <div class="navbar">
+
+      <ion-title class="titleicon">إختر الصف</ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content class="highschool">
-  <div class="bg">
-    <img src="assets/imgs/school.png">
+<ion-content>
 
-  </div>
 
-  <div class="chooseHighClass">
+  <ion-list>
+   
 
-    <p text-center>
-      اختر الصف
-    </p>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="goToForthAdaby()">   الرابع الأدبي</button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="goToForthAdaby()">  الصف الرابع الأدبي</button>
-    </ion-buttons>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="goToForthElmy()">  الرابع العلمي </button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="goToFifthAdaby()">  الخامس الأدبي </button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="goToFifthElmyAplied()">  الخامس العلمي التطبيقي </button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="goToFifthElmyBio()">  الخامس العلمي الأحيائي </button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="goToSixthAdaby()">  السادس الأدبي </button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="goToSixthElmyAplied()">  السادس العلمي التطبيقي </button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="goToSixthElmyBio()">  السادس العلمي الأحيائي </button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="goToForthElmy()"> الصف الرابع العلمي </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="goToFifthAdaby()"> الصف الخامس الأدبي </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="goToFifthElmyAplied()"> الصف الخامس العلمي التطبيقي </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="goToFifthElmyBio()"> الصف الخامس العلمي الأحيائي </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="goToSixthAdaby()"> الصف السادس الأدبي </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="goToSixthElmyAplied()"> الصف السادس العلمي التطبيقي </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
-      <button ion-button color="light" clear (click)="goToSixthElmyBio()"> الصف السادس العلمي الأحيائي </button>
-    </ion-buttons>
+  </ion-list>
 
-  </div>
 </ion-content>

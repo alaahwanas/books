@@ -1,33 +1,48 @@
 page-first-el {
+  ion-content {
 
-}
-.firstEl {
-  background-color: #245372;
-  padding-bottom: 20px;
-}
-
-.viewer {
-  width: 100%;
-  padding-top: -50px;
-}
+    .button-clear-ios-light {
+      color: #7B52AB;
+    }
+  }
 
 
-.bg {
-  max-width: 150%;
-  border: 0;
-  opacity: 0.3;
-  margin-left: -28px;
- 
-}
-.choosebook {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -90%);
-}
-.pdf-viewer {
-  width: 100%;
+
+  .viewer {
+    width: 100%;
+    padding-top: -50px;
+  }
+
+
+
+
+  .pdf-viewer {
+    width: 100%;
+  }
+
+  .textLayer {
+    width: 100%;
+  }
+
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    pointer-events: auto;
+    font-family: Dubai;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+
+  .navbarimag {
+    float: right;
+  }
+
+  .button[icon-only] {
+    background-color: #522B83;
+  }
 }
 
-.textLayer {
-  width: 100%;
-}

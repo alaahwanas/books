@@ -8,6 +8,9 @@ import { SixthAdabyPage } from '../sixth-adaby/sixth-adaby';
 import { ForthElmyPage } from '../forth-elmy/forth-elmy';
 import { FifthElmyPage } from '../fifth-elmy/fifth-elmy';
 import { SixthElmyPage } from '../sixth-elmy/sixth-elmy';
+
+import { TabsPage } from '../tabs/tabs';
+
 /**
  * Generated class for the HighPage page.
  *
@@ -67,6 +70,12 @@ export class HighPage {
   goToSixthElmyBio() {
 
     this.navCtrl.push(ElmyPage);
+  }
+
+
+  goTHome() {
+    this.navCtrl.push(TabsPage);
+
   }
 
 }

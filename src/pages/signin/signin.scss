@@ -1,0 +1,64 @@
+page-signin {
+  ion-content {
+    background-image: url(../assets/imgs/login.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .item-ios {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  .sign {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: Dubai;
+    padding-top: 60%;
+  }
+
+  .signin {
+    padding-top: 10%;
+  }
+
+
+
+  .uk-button {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Dubai;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, #7B52AB, #522B83);
+    transform: translate(50%, 0);
+    padding-bottom: -20px;
+  }
+
+  .uk-button2 {
+    font-size: 14px;
+    font-family: Dubai;
+    align-items: center;
+    padding: 33px;
+    padding-left: 38%;
+  }
+
+  .item-input ion-input, .item-input ion-textarea {
+    position: static;
+    border-bottom: 3px solid #522B83;
+    width: 88%;
+  }
+
+  .text-input {
+    margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: calc(100% - 8px);
+    text-align: left;
+  }
+
+  }
+  page-signin .item-input ion-input, page-signin .item-input ion-textarea {
+    width: 88%;
+  }

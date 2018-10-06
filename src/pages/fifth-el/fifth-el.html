@@ -7,52 +7,78 @@
 <ion-header>
 
   <ion-navbar color="bg">
-    <ion-title>الصف الخامس الابتدائي</ion-title>
+
+    <div class="navbar">
+
+      <ion-title class="titleicon">الصف الخامس الأبتدائي</ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content class="fifthEl">
-  <div class="bg">
-    <img src="assets/imgs/school.png">
+<ion-content>
 
-  </div>
+  <ion-list>
 
-  <div class="choosebook">
-    <p text-center>
-      اختر الكتاب
-    </p>
-
-
-
-
-    <ion-buttons text-center class="stylebutton2">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openKuranFifthEl()">  القراَن الكريم</button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton2">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openKeraaFifthEl()">  القراءة العربية </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton2">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openElomFifthEl()">  العلوم </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openElomPracticeFifthEl()">  العلوم تمرينات </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton2">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openMathFifthEl()">  الرياضيات </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openSocialFifthEl()">  الأجتماعيات </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openQawaedFifthEl()"> قواعد اللغة العربية </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton2">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openEnglishFifthEl()">  اللغة الأنكليزية </button>
-    </ion-buttons>
-  </div>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
+
 </ion-content>

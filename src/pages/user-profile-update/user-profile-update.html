@@ -1,0 +1,101 @@
+<!--
+  Generated template for the UserProfileUpdatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content>
+  <div *ngFor="let item of itemArray">
+    <div *ngIf="item.uid === myUid">
+      <div class="form">
+
+
+        <ion-item no-lines>   الأسم   :   {{item.name}}    </ion-item>
+
+        <ion-item no-lines>   العمر   :    {{item.age}}    </ion-item>
+
+        <ion-item no-lines>   المحافظة   :   {{item.province}}  </ion-item>
+
+      </div>
+
+
+      <div class="bs">
+
+
+      </div>
+
+      <ion-grid text-center>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-only (click)="logout()">
+              <ion-icon name="md-power"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col-2>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-only uk-toggle="target: #modal-example" (click)="editForm(item.$key)">
+              <ion-icon name="md-create"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+
+
+      <!-- This is the modal -->
+      <div id="modal-example" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+
+            <ion-title>التعديل على المعلومات</ion-title>
+
+            <div class="form2">
+              <ion-list>
+                <div margin>
+              <ion-item no-lines >
+                <ion-input [(ngModel)]="user.userName" type="text" placeholder="الأسم" style=" border: 1px solid #7B52AB; border-radius: 30px;"></ion-input>
+              </ion-item>
+                  </div>
+              <ion-item no-lines >
+                <ion-input [(ngModel)]="user.userAge" type="text" placeholder="العمر"  style=" border: 1px solid #7B52AB; border-radius: 30px"></ion-input>
+              </ion-item>
+              <ion-item no-lines>
+                <ion-input [(ngModel)]="user.userProvince" type="text" placeholder="المحافظة"   style=" border: 1px solid #7B52AB; border-radius: 30px"></ion-input>
+              </ion-item>
+                </ion-list>
+
+            <!--     <fieldset class="uk-fieldset">
+
+    <div class="uk-margin">
+      <input class="uk-input" type="text" [(ngModel)]="user.userName">
+    </div>
+    <div class="uk-margin">
+      <input class="uk-input" type="text" [(ngModel)]="user.userAge">
+    </div>
+
+    <div class="uk-margin">
+      <input class="uk-input" type="text" [(ngModel)]="user.userProvince">
+    </div>
+
+
+  </fieldset>  -->
+
+          </div>
+
+
+            <button class="uk-button  uk-button-Large  uk-background-default uk-modal-close" type="button">الغاء</button>
+            <button class="uk-button  uk-button-Large  uk-background-primary  uk-modal-close" type="button" (click)="onEdit(item.$key)">حفظ</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</ion-content>
+
+
+
+
+

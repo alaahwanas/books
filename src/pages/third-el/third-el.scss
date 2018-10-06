@@ -1,8 +1,27 @@
 page-third-el {
 
-}
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    pointer-events: auto;
+    font-family: Dubai;
+  }
 
-.thirdEl {
-  background-color: #245372;
-  padding-bottom: 20px;
+  .navbar {
+    align-items: center;
+  }
+
+  .navbarimag {
+    float: right;
+  }
+
+  .button-clear-ios-light {
+    color: #7B52AB;
+  }
+
+  .button[icon-only] {
+    background-color: #522B83;
+  }
 }

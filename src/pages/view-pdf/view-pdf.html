@@ -8,15 +8,23 @@
   
 
   <ion-navbar color="bg">
-    
-          <ion-buttons class="styleNav">
-            <button ion-button small icon-only (click)="pdfshow = !pdfshow">
-              <ion-icon name="md-close-circle"></ion-icon>
-            </button>
-          </ion-buttons>
-        
-          <ion-title>{{displayData.title}}</ion-title>
-        
+    <div class="navbar">
+
+      <ion-title class="titleicon">  {{displayData.title}} </ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
+    <ion-buttons class="styleNav">
+      <button ion-button small icon-only (click)="pdfshow = !pdfshow">
+        <ion-icon name="ios-close-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+
 
 
 

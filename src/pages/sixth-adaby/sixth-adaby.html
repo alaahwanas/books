@@ -7,56 +7,78 @@
 <ion-header>
 
   <ion-navbar color="bg">
-    <ion-title>السادس الأدبي</ion-title>
-  </ion-navbar>
 
+    <div class="navbar">
+
+      <ion-title class="titleicon"> السادس الأدبي</ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
+  </ion-navbar>
 </ion-header>
 
+<ion-content>
+  <ion-list>
 
-<ion-content class="sixthAdaby">
-  <div class="bg">
-    <img src="assets/imgs/school.png">
-
-  </div>
-
-  <div class="choosebook">
-    <p text-center>
-      اختر الكتاب
-    </p>
-
-
-
-
-    <ion-buttons text-center class="stylebutton8">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenQuran()">  القران الكريم</button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton8">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenAdab()">  الأدب والنصوص </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton8">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenQwaed()"> قواعد اللغة العربية </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton8">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenNaqed()">  النقد الأدبي  </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton8">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenEconomic()">  الأقتصاد </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton8">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenMath()"> الرياضيات </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton8">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenHistory()"> تاريخ البلاد الحديث  </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton8">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenGeography()">  الجغرافية البشرية </button>
-    </ion-buttons>
-    
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
 
 
 
 
-  </div>
+
+  </ion-list>
 </ion-content>

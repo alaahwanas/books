@@ -7,57 +7,85 @@
 <ion-header>
 
   <ion-navbar color="bg">
-    <ion-title>الصف الرابع الأبتدائي</ion-title>
+
+    <div class="navbar">
+
+      <ion-title class="titleicon">الصف الرابع الأبتدائي</ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content class="fourthEl">
-  <div class="bg">
-    <img src="assets/imgs/school.png">
-
-  </div>
-
-  <div class="choosebook">
-    <p text-center>
-      اختر الكتاب
-    </p>
-
-
-
-
-    <ion-buttons text-center class="stylebutton3">
+<ion-content>
+  <ion-list>
+   
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openKuranForthEl()">  القراَن الكريم</button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton3">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openKeraaForthEl()">  القراءة العربية </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton3">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openQawaedForthEl()">  قواعد اللغة العربية </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton3">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openElomForthEl()">  العلوم </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton3">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openElomPracticeForthEl()">  العلوم تمرينات </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton3">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openMathForthEl()">  الرياضيات </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton3">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openSocialForthEl()">  الأجتماعيات </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton3">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openEnglish()">  اللغة الانكليزية </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton3">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openEnghlishPractice()">  اللغة الانكليزية نشاط </button>
-    </ion-buttons>
-  </div>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>

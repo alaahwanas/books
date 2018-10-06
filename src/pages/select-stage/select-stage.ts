@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 
 import { ElementryPage } from '../elementry/elementry';
 import { MiddlePage } from '../middle/middle';
@@ -19,7 +19,9 @@ import { HighPage } from '../high/high';
 })
 export class SelectStagePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App) {
   }
 
   ionViewDidLoad() {
@@ -30,14 +32,18 @@ export class SelectStagePage {
 
   goToHigh() {
 
-    this.navCtrl.push(HighPage);
+    this.app.getRootNav().push(HighPage);
   }
   goToMiddle() {
 
-    this.navCtrl.push(MiddlePage);
+    this.app.getRootNav().push(MiddlePage);
   }
   goToElementry() {
 
-    this.navCtrl.push(ElementryPage);
+    this.app.getRootNav().push(ElementryPage);
   }
+
+ 
+ 
+
 }

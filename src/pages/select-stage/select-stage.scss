@@ -1,28 +1,45 @@
 page-select-stage {
-}
 
- p {
-  font-size: 30px;
- color: white;
- font-weight: bold;
- font-family: 'Segoe UI';
- }
-.stage {
-  background-color: #245372;
-  padding-bottom: 20px;
-
-}
+  ion-content {
+    background-image: url(../assets/imgs/selectStage.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
-.bg {
-  max-width: 150%;
-  border: 0;
-  opacity: 0.3;
-  margin-left: -28px;
-}
 
-.choosestage {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -110%);
+
+    .selectStage {
+      padding-top: 30%;
+    }
+
+
+    .uk-button {
+      color: #7B52AB;
+      font-size: 15px;
+      font-weight: bold;
+      font-family: Dubai;
+      border-radius: 20px;
+      transform: translate(50%, 0);
+      border-color: #7B52AB;
+    }
+
+    .buttonSpace1 {
+      margin-bottom: 35px;
+    }
+
+    .choosestage {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -110%);
+    }
+  }
+
+  .p {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: Dubai;
+    padding-top: 40%;
+  }
 }

@@ -5,37 +5,51 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar color="bg">
-    <ion-title>المرحلة المتوسطة</ion-title>
+
+    <div class="navbar">
+
+      <ion-title class="titleicon">إختر الصف</ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content class="middleschool">
-  <div class="bg">
-    <img src="assets/imgs/school.png">
+<ion-content>
 
-  </div>
-  <div class="chooseMidClass">
+  <ion-list>
+    <ion-list-header>
 
-    <p text-center>
-      اختر الصف
-    </p>
+    </ion-list-header>
 
-
-    <ion-buttons text-center>
+    <ion-item text-center>
       <button ion-button color="light" clear (click)="goToFirstMid()">  الصف الاول المتوسط</button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center>
+    <ion-item text-center>
       <button ion-button color="light" clear (click)="goToSecondMid()">  الصف الثاني المتوسط </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center>
+    <ion-item text-center>
       <button ion-button color="light" clear (click)="goToThirdMid()">  الصف الثالث المتوسط </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
 
-    </div>
 </ion-content>

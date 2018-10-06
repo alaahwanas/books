@@ -1,43 +1,47 @@
-
-
-
-
-
-
-
-
-
-
-<ion-content class="stage">
-
-  <div class="bg">
-    <img src="assets/imgs/school.png">
-
-  </div>
-
-  <div class="choosestage">
-
+<ion-header>
+  <div class="p">
     <p text-center>
-      اختر المرحلة
+      إختر المرحلة
     </p>
-
-
-
-
-
-
-    <ion-buttons text-center>
-      <button ion-button color="light" clear (click)="goToElementry()">  المرحلة الابتدائية</button>
-    </ion-buttons>
-
-    <ion-buttons text-center>
-      <button ion-button color="light" clear (click)="goToMiddle()">  المرحلة المتوسطة </button>
-    </ion-buttons>
-
-    <ion-buttons text-center>
-      <button ion-button color="light" clear (click)="goToHigh()">  المرحلة الاعدادية </button>
-    </ion-buttons>
-
   </div>
 
-</ion-content>
+</ion-header>
+
+
+    <ion-content>
+
+     
+
+
+      <div class="selectStage">
+
+        <div class="buttonSpace1">
+          <button class="uk-button uk-button-default uk-button-Large uk-width-1-2 uk-background-default" (click)="goToElementry()">
+            المرحلة الأبتدائية
+          </button>
+        </div>
+
+
+        <div class="buttonSpace1">
+
+          <button class="uk-button uk-button-default uk-button-Large uk-width-1-2 uk-background-default" (click)="goToMiddle()">
+            المرحلة المتوسطة
+          </button>
+        </div>
+
+        <div class="buttonSpace1">
+
+          <button class="uk-button uk-button-default uk-button-Large uk-width-1-2 uk-background-default" (click)="goToHigh()">
+            المرحلة الأعدادية
+          </button>
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </ion-content>
+

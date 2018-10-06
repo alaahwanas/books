@@ -1,25 +1,36 @@
 page-elementry {
-
-}
-.elementryschool {
-  background-color: #245372;
-  padding-bottom: 20px;
-}
+  ion-content {
+  }
 
 
 
-.bg {
-  max-width: 150%;
-  border: 0;
-  opacity: 0.3;
-  margin-left: -28px;
-}
 
-.chooseElClass {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -95%);
-}
-.buttonSpace {
-  margin: -5px;
+
+
+
+
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    pointer-events: auto;
+    font-family: Dubai;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+
+  .navbarimag {
+    float: right;
+  }
+
+  .button-clear-ios-light {
+    color: #7B52AB;
+  }
+
+  .button[icon-only] {
+    background-color: #522B83;
+  }
 }

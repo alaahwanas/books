@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController  } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the ViewPdfPage page.
@@ -40,6 +41,11 @@ export class ViewPdfPage {
   dismiss(): void {
     let data = { 'foo': 'bar' };
     this.viewCtrl.dismiss(data);
+  }
+
+  goTHome() {
+    this.navCtrl.push(TabsPage);
+
   }
   
 }

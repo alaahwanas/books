@@ -1,0 +1,30 @@
+<!--
+  Generated template for the ChatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding>
+  <div class="form">
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input [(ngModel)]="comments.userName" type="text" placeholder="الأسم" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="comments.commentSubject" type="text" placeholder="الموضوع" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-textarea rows="5" [(ngModel)]="comments.userComment" type="text" placeholder="التفاصيل" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-textarea>
+      </ion-item>
+      </ion-list>
+</div>
+  <div class="bs" text-center>
+    <button class="uk-button uk-button-Large uk-width-1-2 uk-background-default	" (click)="sendComment(comments)">
+      إرسال
+    </button>
+  </div>
+
+</ion-content>
+

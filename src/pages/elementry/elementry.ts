@@ -6,6 +6,7 @@ import { ThirdElPage } from '../third-el/third-el';
 import { FourthElPage } from '../fourth-el/fourth-el';
 import { FifthElPage } from '../fifth-el/fifth-el';
 import { SixthElPage } from '../sixth-el/sixth-el';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the ElementryPage page.
@@ -56,5 +57,8 @@ export class ElementryPage {
   }
 
   
-  
+  goTHome() {
+    this.navCtrl.push(TabsPage);
+
+  }
 }

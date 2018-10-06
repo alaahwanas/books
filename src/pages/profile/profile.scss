@@ -1,0 +1,65 @@
+page-profile {
+
+  ion-content {
+    background-image: url(../assets/imgs/AddUser.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item-ios {
+    text-align: right;
+  }
+
+  .uk-background-default {
+    background-color: #7B5DA0;
+    border-radius: 25px;
+    color: white;
+    font-size: 21px;
+  }
+
+  [class*=uk-width] {
+    box-sizing: border-box;
+    width: 80%;
+  }
+
+  .item-input ion-label {
+    color: #7B52AB;
+    font-size: 21px;
+    font-family: Dubai;
+  }
+
+  .text-input-ios {
+    text-align: right;
+    font-family: Dubai;
+    font-size: 21px;
+  }
+
+  .uk-button:not(:disabled) {
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .button-inner {
+    background-color: #7B52AB
+  }
+
+  .form {
+    padding-top: 52%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .bs {
+    padding-top: 27%;
+   
+  }
+
+
+}
+
+page-profile .text-input-ios {
+  border: 1px solid #7B52AB;
+  border-radius: 25px;
+  padding: 1%;
+}

@@ -1,0 +1,53 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content>
+  <div class="form">
+    <ion-item no-lines>
+      <ion-input [(ngModel)]="user.userName" type="text" placeholder="الأسم"></ion-input>
+    </ion-item>
+    <ion-item no-lines>
+      <ion-input [(ngModel)]="user.userAge" type="text" placeholder="العمر"></ion-input>
+    </ion-item>
+    <ion-item class="province" no-lines>
+      <ion-input [(ngModel)]="user.userProvince" type="text" placeholder="المحافظة"></ion-input>
+    </ion-item>
+  </div>
+  <div class="bs" text-center>
+    <button class="uk-button uk-button-Large uk-width-1-2 uk-background-default	" (click)="addU(user)">
+      حفظ
+    </button>
+  </div>
+</ion-content>
+
+
+<!--
+<form dir="rtl">
+     <fieldset class="uk-fieldset">
+
+
+        <div class="uk-margin">
+          <input class="uk-input" [(ngModel)]="user.userName" type="text" placeholder="الأسم">
+        </div>
+        <div class="uk-margin">
+          <input class="uk-input" [(ngModel)]="user.userAge" type="text" placeholder="العمر">
+        </div>
+
+        <div class="uk-margin">
+          <textarea class="uk-textarea" [(ngModel)]="user.userProvince" type="text" placeholder="المحافظة"></textarea>
+        </div>
+
+
+
+
+  </fieldset>
+</form>
+
+
+
+    -->

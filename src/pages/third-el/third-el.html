@@ -7,47 +7,68 @@
 <ion-header>
 
   <ion-navbar color="bg">
-    <ion-title>الصف الثالث الأبتدائي</ion-title>
+
+    <div class="navbar">
+
+      <ion-title class="titleicon">الصف الثالث الأبتدائي</ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content class="thirdEl">
-  <div class="bg">
-    <img src="assets/imgs/school.png">
+<ion-content>
 
-  </div>
+  <ion-list>
+    <ion-list-header>
+    </ion-list-header>
 
-  <div class="choosebook">
-    <p text-center>
-      اختر الكتاب
-    </p>
-
-
-
-
-    <ion-buttons text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openKuran()">  القراَن الكريم</button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openKeraa()">  قراءتي </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openElom()">  العلوم </button>
-    </ion-buttons>
-    <ion-buttons text-center>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openElomPractice()">  العلوم تمرينات </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openMath()">  الرياضيات </button>
-    </ion-buttons>
-    <ion-buttons text-center>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openMathpractice()">  الرياضيات تمرينات </button>
-    </ion-buttons>
-  </div>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

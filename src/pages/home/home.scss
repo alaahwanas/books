@@ -1,69 +1,49 @@
 
 
-$colors: ( bg: #245372 );
 page-home {
+
+  ion-content {
+    background-image: url(../assets/imgs/homeBg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+      padding-top: 15%;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: Dubai;
+      text-align: center;
+      color: white;
+    }
+
+    .startButton {
+      padding-top: 100%;
+    }
+
+    .uk-button {
+      color: #7B52AB;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Dubai;
+      border-radius: 20px;
+      transform: translate(50%, 0);
+    }
+  }
+
+
+
+  .p {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: Dubai;
+    padding-top: 20%;
+  }
+
+
+
+  .masters {
+    background-color: #245372;
+  }
 }
-
-
-h1 {
-  padding-top: 10px;
-  font-size: 40px;
-  font-weight: bold;
-  font-family:'Segoe UI';
-  text-align: center;
- color: white;
-}
-
-
-ion-buttons {
-  padding-top: 10px;
-  font-size: 40px;
-  font-family: 'Segoe UI';
-  font-weight: bold;
-  opacity: 7;
-}
-
-
-
-.bg {
- 
-
-}
-
-.masters {
-  background-color: #245372;
-
-}
-
-.cfi {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  color: snow;
-}
-
-p {
-  font-size: 15px;
-  color: white;
-  font-weight: lighter;
-  font-family: 'Segoe UI';
-}
-
-
-
-img {
-  max-width: 130%;
-  border: 0;
-  opacity: 0.8;
-  padding-top: 10px;
-margin-left: -28px;
-
-}
-
-
-
-
-
-
-
-

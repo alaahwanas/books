@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Modal, ModalController } from 'ionic-angular';
 import { ViewPdfPage } from '../view-Pdf/view-Pdf';
+import { TabsPage } from '../tabs/tabs';
+
+
 /**
  * Generated class for the SecondmidPage page.
  *
@@ -44,7 +47,7 @@ export class SecondmidPage {
           url: 'https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%A7%D9%88%D9%84.pdf?alt=media&token=135b2ff4-8f65-439f-978e-d5d68e91f124'
 
         },
-        title: 'اللغة العربية ج1'
+        title: 'اللغة العربية الجزء الأول'
       }
     });
     modal.present();
@@ -57,7 +60,7 @@ export class SecondmidPage {
           url: 'https://firebasestorage.googleapis.com/v0/b/ionicbooks-af114.appspot.com/o/middle%2Fsecondmiddle%2F%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A.pdf?alt=media&token=e8263fc6-c2ce-460d-acbe-3d30ead8dce5'
 
         },
-        title: 'اللغة العربية ج2'
+        title: 'اللغة العربية الجزء الثاني'
       }
     });
     modal.present();
@@ -173,4 +176,9 @@ export class SecondmidPage {
     modal.present();
   }
 
+
+  goTHome() {
+    this.navCtrl.push(TabsPage);
+
+  }
 }

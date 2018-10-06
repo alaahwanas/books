@@ -6,50 +6,69 @@
 -->
 <ion-header>
 
-  <ion-navbar color ="bg">
-    <ion-title>الخامس العلمي الأحيائي</ion-title>
-  </ion-navbar>
 
+  <ion-navbar color="bg">
+
+    <div class="navbar">
+
+      <ion-title class="titleicon"> الخامس العلمي الأحيائي </ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button  icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
+  </ion-navbar>
 </ion-header>
 
+<ion-content>
+  <ion-list>
 
-<ion-content class="Adaby">
-  <div class="bg">
-    <img src="assets/imgs/school.png">
-
-  </div>
-  <div class="choosebook">
-
-    <p text-center>
-      اختر الكتاب
-    </p>
-
-
-
-
-
-
-    <ion-buttons text-center class="stylebutton7">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenQuran()">  القران الكريم</button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton7">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenAdab()">  الأدب والنصوص </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton7">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenQwaed()"> قواعد اللغة العربية </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton7">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenBio()">  الأحياء </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton7">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenMath()"> الرياضيات </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton7">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenPhysics()"> الفيزياء  </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton7">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="  OpenChimist()">  الكيمياء </button>
-    </ion-buttons>
-  </div>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
+
 </ion-content>

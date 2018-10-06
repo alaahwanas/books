@@ -32,16 +32,30 @@ import { SixthAdabyPage } from '../pages/sixth-adaby/sixth-adaby';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireStorageModule } from 'angularfire2/storage';
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+
+
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import { ViewPdfPage } from '../pages/view-Pdf/view-Pdf';
 
 
-ViewPdfPage
+import { SigninPage } from '../pages/signin/signin';
+import { SingupPage } from '../pages/singup/singup';
+import { ProfilePage } from '../pages/profile/profile';
+import { ChatPage } from '../pages/chat/chat';
+import { TabsPage } from '../pages/tabs/tabs';
+import { AuthServiceProvider } from '../providers/auth-service/auth-service';
+import { UserServiceProvider } from '../providers/user-service/user-service';
+import { CommentsProvider } from '../providers/comments/comments';
+import { UserProfileUpdatePage } from '../pages/user-profile-update/user-profile-update';
 
-var firebaseConfig = {
+
+
+
+export const firebaseConfig = {
   apiKey: "AIzaSyD5vQctxCdsMCbHjMyNUGBqt7fG1rnNQWw",
   authDomain: "ionicbooks-af114.firebaseapp.com",
   databaseURL: "https://ionicbooks-af114.firebaseio.com",
@@ -78,16 +92,23 @@ var firebaseConfig = {
     ForthAdabyPage,
     FifthAdabyPage,
     SixthAdabyPage,
-    ViewPdfPage
-    
+    ViewPdfPage,
+    SigninPage,
+    SingupPage,
+    ProfilePage,
+    ChatPage,
+    TabsPage,
+    UserProfileUpdatePage
 
   ],
   imports: [
     BrowserModule, PdfViewerModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      backButtonText: '' }),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    AngularFireAuthModule
   ],
 
   bootstrap: [IonicApp],
@@ -116,14 +137,27 @@ var firebaseConfig = {
     ForthAdabyPage,
     FifthAdabyPage,
     SixthAdabyPage,
-    ViewPdfPage
+    ViewPdfPage,
+    SigninPage,
+    SingupPage,
+    ProfilePage,
+    ChatPage,
+    TabsPage,
+    UserProfileUpdatePage
 
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireDatabase,
+
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    InAppBrowser
+    InAppBrowser,
+    AuthServiceProvider,
+    AngularFireAuth,
+    UserServiceProvider,
+    CommentsProvider,
+    UserServiceProvider
    
   ]
 })

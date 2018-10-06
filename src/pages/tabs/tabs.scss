@@ -1,0 +1,25 @@
+page-tabs {
+
+  .tabs-ios .tab-button-icon {
+    margin-top: 4px;
+    margin-bottom: 1px;
+    min-width: 35px;
+    height: 30px;
+    font-size: 30px;
+    color: #BCC5D3;
+  }
+
+  .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    color: #7B52AB;
+  }
+
+  .tabs-ios .tabbar {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top: 0.55px solid rgba(0, 0, 0, 0.3);
+    background: white;
+    border: white;
+  }
+}

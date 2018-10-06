@@ -5,62 +5,92 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar color="bg">
-    <ion-title>الصف الاول المتوسط</ion-title>
-  </ion-navbar>
 
+    <div class="navbar">
+
+      <ion-title class="titleicon">الصف الأول المتوسط</ion-title>
+    </div>
+    <div class="navbarimag">
+
+      <button ion-button icon-only (click)="goTHome()">
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </div>
+
+  </ion-navbar>
 </ion-header>
 
 
-<ion-content class="firrstmid">
-  <div class="bg">
-    <img src="assets/imgs/school.png">
+<ion-content>
 
-  </div>
+  <ion-list>
 
-  <div class="choosebook">
-    <p text-center>
-      اختر الكتاب
-    </p>
+    <ion-item text-right>
 
-    
-
-
-
-
-    <ion-buttons text-center class="stylebutton4">
       <button ion-button color="light" clear (click)=" openKuran()">  القران الكريم </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton4">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openKeraa()">  اللغة العربية الجزء الاول </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton4">
-      <button ion-button color="light" clear (click)="openKeraaTwo()">  اللغة العربية الجزء الجزء الثاني </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
+      <button ion-button color="light" clear (click)="openKeraaTwo()">  اللغة العربية الجزء الثاني </button>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton4">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openElom()">  العلوم الجزء الاول </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton4">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openElomPractice()">  العلوم الجزء الثاني </button>
-    </ion-buttons>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
 
-    <ion-buttons text-center class="stylebutton4">
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openMath()">  الرياضيات الجزء الاول </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton4">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openMathpractice()">  الرياضيات الجزء الثاني </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton4">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openSocials()"> الأجتماعيات  </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton4">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openEnglish()"> اللغة الانكليزية  </button>
-    </ion-buttons>
-    <ion-buttons text-center class="stylebutton4">
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="openEnglishPractice()"> الانكليزي نشاط   </button>
-    </ion-buttons>
-  </div>
+      <ion-thumbnail item-end>
+        <img src="../assets/imgs/choosebook.png">
+      </ion-thumbnail>
+    </ion-item>
+
+  </ion-list>
+
 </ion-content>

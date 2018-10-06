@@ -10,12 +10,33 @@ page-view-pdf {
   }
 
   .toolbar-title-ios {
-    position: inherit;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    pointer-events: auto;
+    font-family: Dubai;
   }
 
   .styleNav {
     position: absolute;
     left: 7%;
     transform: translate(-50%, -78%);
+  }
+
+  .navbar {
+    align-items: center;
+  }
+
+  .navbarimag {
+    float: right;
+  }
+
+  .bar-button-ios[icon-only] {
+    padding-top: 5.9em;
+  }
+
+  .button[icon-only] {
+    background-color: #522B83;
   }
 }
