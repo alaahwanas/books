@@ -10,6 +10,7 @@
     <div *ngIf="item.uid === myUid">
       <div class="form">
 
+        
 
         <ion-item no-lines>   الأسم   :   {{item.name}}    </ion-item>
 
@@ -31,6 +32,7 @@
             <button ion-button icon-only (click)="logout()">
               <ion-icon name="md-power"></ion-icon>
             </button>
+
           </ion-col>
           <ion-col col-2>
           </ion-col>
@@ -42,58 +44,85 @@
         </ion-row>
       </ion-grid>
 
+    </div>
+
+  </div>
+</ion-content>
 
 
+<!-- This is the modal -->
+<div id="modal-example" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body">
 
-      <!-- This is the modal -->
-      <div id="modal-example" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
-
-            <ion-title>التعديل على المعلومات</ion-title>
-
-            <div class="form2">
-              <ion-list>
-                <div margin>
-              <ion-item no-lines >
+    <p class="titleEdit">التعديل على المعلومات</p>
+    <div *ngFor="let item of itemArray">
+      <div *ngIf="item.uid === myUid">
+        <div class="form2">
+          <ion-list no-lines>
+            <div margin>
+              <ion-item no-lines>
                 <ion-input [(ngModel)]="user.userName" type="text" placeholder="الأسم" style=" border: 1px solid #7B52AB; border-radius: 30px;"></ion-input>
               </ion-item>
-                  </div>
-              <ion-item no-lines >
-                <ion-input [(ngModel)]="user.userAge" type="text" placeholder="العمر"  style=" border: 1px solid #7B52AB; border-radius: 30px"></ion-input>
-              </ion-item>
+            </div>
+            <div margin>
               <ion-item no-lines>
-                <ion-input [(ngModel)]="user.userProvince" type="text" placeholder="المحافظة"   style=" border: 1px solid #7B52AB; border-radius: 30px"></ion-input>
+                <ion-input [(ngModel)]="user.userAge" type="text" placeholder="العمر" style=" border: 1px solid #7B52AB; border-radius: 30px"></ion-input>
               </ion-item>
-                </ion-list>
+            </div>
 
-            <!--     <fieldset class="uk-fieldset">
+            <div margin>
+              <ion-item no-lines>
 
-    <div class="uk-margin">
-      <input class="uk-input" type="text" [(ngModel)]="user.userName">
-    </div>
-    <div class="uk-margin">
-      <input class="uk-input" type="text" [(ngModel)]="user.userAge">
-    </div>
+                <div dir="rtl">
+                  <div class=" custom-select">
+                    <select [(ngModel)]="user.userProvince" style="color: #522B83; font-size: 20px; font-family: Dubai; padding: 3%; border: none; ">
 
-    <div class="uk-margin">
-      <input class="uk-input" type="text" [(ngModel)]="user.userProvince">
-    </div>
+                      <option>أربيل</option>
+                      <option>الأنبار</option>
+                      <option>بابل</option>
+                      <option>بغداد</option>
+                      <option>البصرة</option>
+                      <option>حلبجة</option>
+                      <option>دهوك</option>
+                      <option>القادسية </option>
+                      <option>ديالى </option>
 
+                      <option>ذي قار</option>
+                      <option>السليمانية </option>
+                      <option>صلاح الدين </option>
+                      <option>كركوك </option>
+                      <option>كربلاء </option>
+                      <option>المثنى </option>
+                      <option>ميسان </option>
+                      <option>النجف </option>
+                      <option>نينوى </option>
+                      <option>واسط </option>
 
-  </fieldset>  -->
+                    </select>
+                  </div>
+                </div>
 
-          </div>
+              </ion-item>
+            </div>
+           
 
+          </ion-list>
 
-            <button class="uk-button  uk-button-Large  uk-background-default uk-modal-close" type="button">الغاء</button>
-            <button class="uk-button  uk-button-Large  uk-background-primary  uk-modal-close" type="button" (click)="onEdit(item.$key)">حفظ</button>
+          <!--        -->
+
         </div>
+
+
+        <button class="uk-button  uk-button-Large  uk-background-default uk-modal-close" type="button">الغاء</button>
+
+        <button class="uk-button  uk-button-Large  uk-background-primary  uk-modal-close" type="button" (click)="onEdit(item.$key)">حفظ</button>
+
+
       </div>
-
     </div>
-  </div>
 
-</ion-content>
+  </div>
+</div>
 
 
 

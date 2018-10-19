@@ -9,20 +9,47 @@
 <ion-content>
   <div class="form">
     <ion-item no-lines>
-      <ion-input [(ngModel)]="user.userName" type="text" placeholder="الأسم"></ion-input>
+      <ion-input [(ngModel)]="user.userName" type="text" placeholder="الأسم" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-input>
     </ion-item>
     <ion-item no-lines>
-      <ion-input [(ngModel)]="user.userAge" type="text" placeholder="العمر"></ion-input>
+      <ion-input [(ngModel)]="user.userAge" type="text" placeholder="العمر" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-input>
     </ion-item>
     <ion-item class="province" no-lines>
-      <ion-input [(ngModel)]="user.userProvince" type="text" placeholder="المحافظة"></ion-input>
+      <!--  <ion-input [(ngModel)]="user.userProvince" type="text" placeholder="المحافظة"></ion-input>-->
+      <div dir="rtl">
+        <select [(ngModel)]="user.userProvince" placeholder="المحافظة" style="color: #522B83; font-size: 20px; font-family: Dubai; padding: 3%; border:none;">
+          <option value="" hidden> المحافظة</option>
+          <option>أربيل</option>
+          <option>الأنبار</option>
+          <option>بابل</option>
+          <option>بغداد</option>
+          <option>البصرة</option>
+          <option>حلبجة</option>
+          <option>دهوك</option>
+          <option>القادسية </option>
+          <option>ديالى </option>
+
+          <option>ذي قار</option>
+          <option>السليمانية </option>
+          <option>صلاح الدين </option>
+          <option>كركوك </option>
+          <option>كربلاء </option>
+          <option>المثنى </option>
+          <option>ميسان </option>
+          <option>النجف </option>
+          <option>نينوى </option>
+          <option>واسط </option>
+
+        </select>
+      </div>
     </ion-item>
+    <div class="bs" text-center>
+      <button class="uk-button uk-button-Large uk-width-1-2 uk-background-default	" (click)="addU(user)">
+        حفظ
+      </button>
+    </div>
   </div>
-  <div class="bs" text-center>
-    <button class="uk-button uk-button-Large uk-width-1-2 uk-background-default	" (click)="addU(user)">
-      حفظ
-    </button>
-  </div>
+ 
 </ion-content>
 
 

@@ -28,6 +28,7 @@ export class UserProfileUpdatePage {
 
   }
 
+ 
   userList: AngularFireList<any>;
 
   myUid: any
@@ -130,3 +131,4 @@ export class userItemClass{
 
 
 }
+

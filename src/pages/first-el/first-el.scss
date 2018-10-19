@@ -1,48 +1,26 @@
 page-first-el {
-  ion-content {
-
-    .button-clear-ios-light {
-      color: #7B52AB;
-    }
-  }
-
-
-
-  .viewer {
-    width: 100%;
-    padding-top: -50px;
-  }
-
-
-
-
-  .pdf-viewer {
-    width: 100%;
-  }
-
-  .textLayer {
-    width: 100%;
-  }
-
-  .toolbar-title-ios {
+  .toolbar-title {
+    color: #fff;
     text-align: center;
-    font-size: 15px;
-    font-weight: 400;
-    color: #000;
-    pointer-events: auto;
     font-family: Dubai;
+    font-size: 15px;
   }
 
-  .navbar {
-    align-items: center;
+  ion-content {
   }
 
-  .navbarimag {
-    float: right;
+
+
+
+
+
+
+
+  .button-clear-md-light {
+    color: #7B52AB;
   }
 
   .button[icon-only] {
     background-color: #522B83;
   }
 }
-

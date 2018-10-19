@@ -8,22 +8,22 @@
   
 
   <ion-navbar color="bg">
-    <div class="navbar">
 
-      <ion-title class="titleicon">  {{displayData.title}} </ion-title>
-    </div>
-    <div class="navbarimag">
-
-      <button ion-button icon-only (click)="goTHome()">
-        <ion-icon name="ios-home"></ion-icon>
-      </button>
-    </div>
-
-    <ion-buttons class="styleNav">
-      <button ion-button small icon-only (click)="pdfshow = !pdfshow">
-        <ion-icon name="ios-close-outline"></ion-icon>
+    <ion-buttons navbar-buttons left>
+      <button ion-button icon-only (click)="pdfshow = !pdfshow">
+        <ion-icon name="ios-arrow-back-outline"></ion-icon>
       </button>
     </ion-buttons>
+
+      <ion-title>{{displayData.title}}</ion-title>
+
+      <ion-buttons navbar-buttons end>
+        <button ion-button icon-only (click)="goTHome()">
+          <ion-icon name="ios-home"></ion-icon>
+        </button>
+
+      </ion-buttons>
+
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-<ion-content padding>
+<ion-content >
 
   <div *ngIf="pdfshow">
 

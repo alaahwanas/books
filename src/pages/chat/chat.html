@@ -6,25 +6,34 @@
 -->
 
 
-<ion-content padding>
+<ion-content no-shadow>
   <div class="form">
+
     <ion-list no-lines>
-      <ion-item>
+
+      <ion-item no-lines>
         <ion-input [(ngModel)]="comments.userName" type="text" placeholder="الأسم" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-input>
       </ion-item>
       <ion-item>
         <ion-input [(ngModel)]="comments.commentSubject" type="text" placeholder="الموضوع" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-input>
       </ion-item>
-      <ion-item>
-        <ion-textarea rows="5" [(ngModel)]="comments.userComment" type="text" placeholder="التفاصيل" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-textarea>
+
+      <ion-item no-lines>
+
+        <ion-textarea rows="4" [(ngModel)]="comments.userComment" type="text" placeholder="التفاصيل" style=" border: 1px solid #7B52AB;   border-radius: 20px;"></ion-textarea>
       </ion-item>
-      </ion-list>
-</div>
-  <div class="bs" text-center>
-    <button class="uk-button uk-button-Large uk-width-1-2 uk-background-default	" (click)="sendComment(comments)">
-      إرسال
-    </button>
+      <div hidden></div>
+    
+    </ion-list>
+    <div class="bs" text-center>
+      <button class="uk-button uk-button-Large uk-width-1-2 uk-background-default	" (click)="sendComment(comments)">
+        إرسال
+      </button>
+    </div>
   </div>
+
+
+  
 
 </ion-content>
 

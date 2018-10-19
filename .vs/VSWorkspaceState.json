@@ -3,14 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\assets",
     "\\src\\pages",
-    "\\src\\pages\\signin",
-    "\\src\\pages\\singup",
-    "\\src\\pages\\user-profile-update",
-    "\\src\\providers\\auth-service",
-    "\\src\\providers\\comments",
-    "\\src\\providers\\user-service"
+    "\\src\\pages\\chat",
+    "\\src\\pages\\profile"
   ],
-  "SelectedNode": "\\src\\pages\\user-profile-update\\user-profile-update.scss",
+  "SelectedNode": "\\src\\pages\\chat\\chat.html",
   "PreviewInSolutionExplorer": false
 }

@@ -9,7 +9,7 @@ page-user-profile-update {
   }
 
 
- 
+
 
 
   .uk-modal-title {
@@ -21,10 +21,13 @@ page-user-profile-update {
     text-align: right;
   }
 
+  .button-md {
+    color: #7B52AB;
+    background-color: #ffffff;
+  }
 
-  .item-ios {
+  .item-md {
     text-align: right;
-    
   }
 
 
@@ -36,14 +39,14 @@ page-user-profile-update {
 
   .item-input ion-label {
     color: #522B83;
-    font-size: 21px;
+    font-size: 18px;
     font-family: Dubai;
   }
 
-  .text-input-ios {
+  .text-input-md {
     text-align: right;
     font-family: Dubai;
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .uk-button:not(:disabled) {
@@ -51,17 +54,23 @@ page-user-profile-update {
     padding: 5px;
   }
 
-  .button-inner {
-    background-color: white;
+
+  .button-ios {
     color: #7B52AB;
+    background-color: #fff;
   }
+
+
 
   .form {
     padding-top: 45%;
     padding-left: 2%;
-    padding-right: 7%;
+    padding-right: 2%;
     display: block;
   }
+
+
+  
 
   .bs {
     padding-top: 5%;
@@ -69,7 +78,7 @@ page-user-profile-update {
 
   .input-wrapper {
     color: #522B83;
-    font-size: 25px;
+    font-size: 20px;
     text-align: right;
     font-family: Dubai;
     font-weight: bold;
@@ -84,31 +93,63 @@ page-user-profile-update {
 
 
 
-.uk-background-primary {
-  background-color: #7B5DA0 !important;
-  border-radius: 19px;
-  color: white !important;
-  font-size: 12px;
+
+
+#modal-example {
+  .list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+    border-bottom: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .text-input-ios {
+    text-align: right;
+    font-family: Dubai;
+    font-size: 18px;
+    color: #522B83;
+  }
+
+  .text-input-md {
+    color: #522B83;
+    text-align: right;
+    font-family: Dubai;
+    font-size: 18px;
+  }
+
+  .list-md {
+    margin: 0;
+    border: none;
+  }
+
+  .uk-background-primary {
+    background-color: #7B5DA0 !important;
+    border-radius: 19px;
+    color: white !important;
+    font-size: 12px;
+  }
+
+  .uk-background-default {
+    border-radius: 19px;
+    border: 1px solid #7B5DA0 !important;
+    color: #7B5DA0;
+    font-size: 12px;
+  }
+
+  .titleEdit {
+    color: #7B52AB;
+    font-family: Dubai;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .custom-select {
+    position: relative;
+    font-family: Dubai;
+    border: 0;
+    font: 32px
+  }
 }
 
-.uk-background-default {
-  border-radius: 19px;
-  border: 1px solid #7B5DA0 !important;
-  color: #7B5DA0;
-  font-size: 12px;
-}
-
-.toolbar-title-ios {
-  color: #7B52AB;
-  font-family: Dubai;
-  font-size: 22px;
-}
-
-.text-input-ios {
-  color: #522B83;
-  text-align: right;
-  font-family: Dubai;
-  font-size: 20px;
-}
 
 

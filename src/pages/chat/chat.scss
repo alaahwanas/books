@@ -7,8 +7,10 @@ page-chat {
     background-size: cover;
   }
 
-  .item-ios {
+  .text-input-md {
     text-align: right;
+    font-family: Dubai;
+    font-size: 16px;
   }
 
   .uk-background-default {
@@ -29,12 +31,18 @@ page-chat {
     font-family: Dubai;
   }
 
-  
+  .item-md.item-input.item-input-has-focus .item-inner,
+  .item-md.item-input.input-has-focus {
+    border-bottom-color: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
 
   .text-input-ios {
     text-align: right;
     font-family: Dubai;
-    font-size: 21px;
+    font-size: 16px;
   }
 
   .uk-button:not(:disabled) {
@@ -47,13 +55,16 @@ page-chat {
   }
 
   .form {
-    padding-top: 45%;
+    display: block;
+    position: absolute;
+    width: 90%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
   }
 
   .bs {
-    padding-top: 1%;
+    padding-top: 7%;
   }
 }
-
-
-

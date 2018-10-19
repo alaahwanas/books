@@ -9,34 +9,44 @@ page-view-pdf {
     width: 100%;
   }
 
-  .toolbar-title-ios {
+
+
+  .toolbar-title {
+    color: #fff;
     text-align: center;
-    font-size: 15px;
-    font-weight: 400;
-    color: #000;
-    pointer-events: auto;
     font-family: Dubai;
+    font-size: 12px;
   }
 
-  .styleNav {
-    position: absolute;
-    left: 7%;
-    transform: translate(-50%, -78%);
-  }
 
-  .navbar {
-    align-items: center;
-  }
 
-  .navbarimag {
-    float: right;
-  }
+  
 
-  .bar-button-ios[icon-only] {
-    padding-top: 5.9em;
+
+
+
+
+
+  .button-clear-md-light {
+    color: #7B52AB;
   }
 
   .button[icon-only] {
     background-color: #522B83;
   }
 }
+
+page-user-profile-update .button-md {
+  color: #7B52AB;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+page-user-profile-update .input-wrapper {
+  color: #522B83;
+  font-size: 20px;
+  text-align: right;
+  font-family: Dubai;
+  font-weight: bold;
+}
+

@@ -13,28 +13,32 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <div class="formsinup">
+    <ion-list no-lines>
 
-    <ion-item no-lines>
-      <ion-label stacked>Email</ion-label>
-      <ion-input [(ngModel)]='data.email' type="text" autocomplete="on"></ion-input>
-    </ion-item>
+      <ion-item style=" border-bottom: 3px solid #E5E5E5">
+        <ion-input [(ngModel)]="data.email" type="text" autocomplete="on" placeholder=" Email"></ion-input>
+      </ion-item>
 
-    <ion-item no-lines>
-      <ion-label stacked>Password</ion-label>
-      <ion-input [(ngModel)]='data.password' type="password" autocomplete="on"></ion-input>
-    </ion-item>
+      <ion-item style=" border-bottom: 3px solid #E5E5E5">
+        <ion-input [(ngModel)]="data.password" type="text" autocomplete="on" placeholder=" Password"></ion-input>
+      </ion-item>
 
-  </ion-list>
+      <div hidden></div>
+    </ion-list>
 
-  <div class="signup">
-    <button class="uk-button uk-button-Large uk-width-1-2 uk-background-default	" (click)="signup()">
-      تسجيل
-    </button>
+    <div class="signup">
+      <button class="uk-button uk-button-Large uk-width-1-2 uk-background-default	" (click)="signup()">
+        تسجيل
+      </button>
+    </div>
+
+    <div class="newaccount">
+      <button class="uk-button2 uk-button-text" (click)="signin()">
+        صفحة الدخول
+      </button>
+    </div>
   </div>
 
-  <div class="newaccount">
-    <button class="uk-button2 uk-button-text" (click)="signin()">
-صفحة الدخول    </button>
-  </div>
+
 </ion-content>

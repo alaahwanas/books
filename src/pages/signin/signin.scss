@@ -1,26 +1,38 @@
 page-signin {
   ion-content {
-    background-image: url(../assets/imgs/login.png);
+    background-image: url(../assets/imgs/signin2.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    .item-ios {
-      font-size: 18px;
+    .item-md {
+      font-size: 16px;
       text-align: center;
+      
+    }
+
+    .formlogin {
+      display: block;
+      position: absolute;
+      width: 80%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
+
+
   .sign {
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     font-weight: bold;
     font-family: Dubai;
-    padding-top: 60%;
+    padding-top: 48%;
   }
 
   .signin {
-    padding-top: 10%;
+    padding-top: 5%;
   }
 
 
@@ -40,25 +52,34 @@ page-signin {
     font-size: 14px;
     font-family: Dubai;
     align-items: center;
-    padding: 33px;
-    padding-left: 38%;
+    padding-top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
-  .item-input ion-input, .item-input ion-textarea {
-    position: static;
-    border-bottom: 3px solid #522B83;
-    width: 88%;
+  .list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child, .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) {
+    border-bottom: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
   }
+
+  .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  .item-md.item-input.item-input-has-focus .item-inner,
+  .item-md.item-input.input-has-focus {
+    border-bottom-color: #7B52AB !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+
 
   .text-input {
-    margin-left: 0;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    width: calc(100% - 8px);
-    text-align: left;
+    text-align: center;
+    font-size: 16px;
   }
-
-  }
-  page-signin .item-input ion-input, page-signin .item-input ion-textarea {
-    width: 88%;
-  }
+}

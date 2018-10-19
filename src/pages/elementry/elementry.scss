@@ -1,4 +1,12 @@
 page-elementry {
+
+  .toolbar-title {
+    color: #fff;
+    text-align: center;
+    font-family: Dubai;
+    font-size: 20px;
+  }
+
   ion-content {
   }
 
@@ -9,24 +17,7 @@ page-elementry {
 
 
 
-  .toolbar-title-ios {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400;
-    color: #000;
-    pointer-events: auto;
-    font-family: Dubai;
-  }
-
-  .navbar {
-    align-items: center;
-  }
-
-  .navbarimag {
-    float: right;
-  }
-
-  .button-clear-ios-light {
+  .button-clear-md-light {
     color: #7B52AB;
   }
 

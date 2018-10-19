@@ -7,68 +7,53 @@
 <ion-header>
 
   <ion-navbar color="bg">
-    
-    <div class="navbar">
+    <ion-title  >إختر الصف </ion-title>
 
-      <ion-title class="titleicon">إختر الصف</ion-title>
-    </div>
-    <div class="navbarimag">
-        <button ion-button  icon-only (click)="goTHome()">
+      <ion-buttons navbar-buttons end>
+        <button ion-button icon-only (click)="goTHome()">
           <ion-icon name="ios-home"></ion-icon>
         </button>
-    </div>
 
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
+
+
 
 
 <ion-content class="chooseclass">
 
 
   <ion-list>
-    <ion-list-header>
 
-    </ion-list-header>
 
-    <ion-item text-center>
+    <ion-item text-right>
       <button ion-button  color="light" clear (click)="goToFirstEl()">  الصف الأول الأبتدائي</button>
-      <ion-thumbnail item-end>
-        <img src="../assets/imgs/choosebook.png">
-      </ion-thumbnail>
+        <img src="/assets/imgs/choosebook.png"  style="width: 53px; height: 46px">
     </ion-item>
 
-    <ion-item text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="goToSecondEl()">  الصف الثاني الأبتدائي </button>
-      <ion-thumbnail item-end>
-        <img src="../assets/imgs/choosebook.png">
-      </ion-thumbnail>
+        <img src="assets/imgs/choosebook.png" style="width: 53px; height: 46px">
     </ion-item>
 
-    <ion-item text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="goToThirdEl()">  الصف الثالث الأبتدائي </button>
-      <ion-thumbnail item-end>
-        <img src="../assets/imgs/choosebook.png">
-      </ion-thumbnail>
+        <img src="assets/imgs/choosebook.png" style="width: 53px; height: 46px">
     </ion-item>
-    <ion-item text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="goToFourthEl()">  الصف الرابع الأبتدائي </button>
-      <ion-thumbnail item-end>
-        <img src="../assets/imgs/choosebook.png">
-      </ion-thumbnail>
+        <img src="assets/imgs/choosebook.png" style="width: 53px; height: 46px">
     </ion-item>
 
-    <ion-item text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="goTofifthEl()">  الصف الخامس الأبتدائي </button>
-      <ion-thumbnail item-end>
-        <img src="../assets/imgs/choosebook.png">
-      </ion-thumbnail>
+        <img src="assets/imgs/choosebook.png" style="width: 53px; height: 46px">
     </ion-item>
-    <ion-item text-center>
+    <ion-item text-right>
       <button ion-button color="light" clear (click)="goToSixthEl()">  الصف السادس الأبتدائي </button>
-      <ion-thumbnail item-end>
-        <img src="../assets/imgs/choosebook.png">
-      </ion-thumbnail>
+        <img src="assets/imgs/choosebook.png" style="width: 53px; height: 46px">
 
     </ion-item>
 
