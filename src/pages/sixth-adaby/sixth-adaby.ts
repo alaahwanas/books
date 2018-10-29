@@ -130,7 +130,7 @@ export class SixthAdabyPage {
   }
 
   goTHome() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(TabsPage);
 
   }
 

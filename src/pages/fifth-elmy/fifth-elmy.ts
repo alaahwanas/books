@@ -129,7 +129,7 @@ export class FifthElmyPage {
     modal.present();
   }
   goTHome() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(TabsPage);
 
   }
 

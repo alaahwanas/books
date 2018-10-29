@@ -122,7 +122,7 @@ export class ForthAdabyPage {
   }
 
   goTHome() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(TabsPage);
 
   }
 

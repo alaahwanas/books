@@ -137,7 +137,7 @@ export class FifthElPage {
   }
 
   goTHome() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(TabsPage);
 
   }
 

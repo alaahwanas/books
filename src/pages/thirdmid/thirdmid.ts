@@ -162,7 +162,7 @@ export class ThirdmidPage {
   }
 
   goTHome() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(TabsPage);
 
   }
 }

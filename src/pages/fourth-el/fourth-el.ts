@@ -151,7 +151,7 @@ openEnghlishPractice(): void {
 
 
   goTHome() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(TabsPage);
 
   }
 

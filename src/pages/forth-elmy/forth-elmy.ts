@@ -123,7 +123,7 @@ export class ForthElmyPage {
   }
 
   goTHome() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(TabsPage);
 
   }
 

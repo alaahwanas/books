@@ -74,7 +74,7 @@ export class HighPage {
 
 
   goTHome() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(TabsPage);
 
   }
 
