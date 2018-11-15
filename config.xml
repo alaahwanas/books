@@ -1,14 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="org.codeforiraq.books" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>المناهج المدرسية</name>
-
     <description>تطبيق الكتروني تعليمي مجاني للمناهح المدرسية لكافة المراحل </description>
     <author email="alaa.hamid@codeforiraq.org">الاء حامد توفيق وناس</author>
     <h6>Alaa Al-shammari</h6>
-
     <content src="index.html" />
     <access origin="*" />
-  <allow-navigation href="*" />
+    <allow-navigation href="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
