@@ -87,8 +87,8 @@ export class ProfilePage {
   showAlert() {
     const alert = this.alertCtrl.create({
       title: 'إضافة مستخدم',
-      subTitle: '!شكرا, لقد تمت الأضافة بنجاح',
-      buttons: ['OK']
+      subTitle: 'شكرا, لقد تمت الأضافة بنجاح',
+      buttons: ['تم']
     });
     alert.present();
 

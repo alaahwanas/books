@@ -4,6 +4,8 @@ import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 import { ElementryPage } from '../elementry/elementry';
 import { MiddlePage } from '../middle/middle';
 import { HighPage } from '../high/high';
+import { AboutPage } from '../about/about';
+
 
 /**
  * Generated class for the SelectStagePage page.
@@ -43,7 +45,11 @@ export class SelectStagePage {
     this.app.getRootNav().push(ElementryPage);
   }
 
- 
+  goToAbout() {
+
+    this.app.getRootNav().push(AboutPage);
+  }
+
  
 
 }

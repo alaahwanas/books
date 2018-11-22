@@ -51,6 +51,7 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { CommentsProvider } from '../providers/comments/comments';
 import { UserProfileUpdatePage } from '../pages/user-profile-update/user-profile-update';
+import { AboutPage } from '../pages/about/about';
 
 
 
@@ -98,7 +99,8 @@ export const firebaseConfig = {
     ProfilePage,
     ChatPage,
     TabsPage,
-    UserProfileUpdatePage
+    UserProfileUpdatePage,
+    AboutPage
 
   ],
   imports: [
@@ -143,7 +145,8 @@ export const firebaseConfig = {
     ProfilePage,
     ChatPage,
     TabsPage,
-    UserProfileUpdatePage
+    UserProfileUpdatePage,
+    AboutPage
 
   ],
   providers: [

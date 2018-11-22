@@ -1,0 +1,66 @@
+page-about {
+
+
+  .toolbar-title {
+    color: #fff;
+    transform: translate(23%,0);
+    font-family: Dubai;
+    font-size: 20px;
+  }
+
+  background-image: url(../assets/imgs/cfilogo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  ion-content {
+
+
+    .form {
+      display: block;
+      position: absolute;
+      width: 80%;
+      padding-top: 105%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      font-size: 12px;
+      color: #6E6C6C;
+      font-family: Dubai;
+      text-align: justify;
+    }
+
+   
+
+    .card {
+      margin-top: 105%;
+      margin-right: 3%;
+      margin-left: 3%;
+    }
+
+    .item-md ion-thumbnail {
+      min-width: 60px !important;
+      min-height: 60px !important;
+    }
+  }
+
+  .card-md {
+  }
+
+  .content-md {
+    background-color: #F7F7F7;
+  }
+
+  .logo {
+    display: block;
+    margin-top: -10%
+  }
+
+  .item-md.item-block .item-inner {
+    border-bottom: none;
+  }
+
+  .item-md {
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+  }
+}

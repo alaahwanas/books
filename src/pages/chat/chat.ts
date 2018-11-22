@@ -109,8 +109,8 @@ export class ChatPage {
   showAlert() {
     const alert = this.alertCtrl.create({
       title: 'تم الأرسال',
-      subTitle: '!شكرا, لقد تم إرسال التعليق بنجاح',
-      buttons: ['OK']
+      subTitle: 'شكرا, لقد تم إرسال التعليق بنجاح',
+      buttons: ['تم']
     });
     alert.present();
   }
