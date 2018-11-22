@@ -4,9 +4,8 @@
     "\\src",
     "\\src\\assets",
     "\\src\\pages",
-    "\\src\\pages\\about",
-    "\\src\\pages\\profile"
+    "\\src\\pages\\about"
   ],
-  "SelectedNode": "\\src\\pages\\profile\\profile.ts",
+  "SelectedNode": "\\src\\pages\\about\\about.scss",
   "PreviewInSolutionExplorer": false
 }
