@@ -8,12 +8,16 @@ page-about {
     font-size: 20px;
   }
 
-  background-image: url(../assets/imgs/cfilogo.png);
-  background-position: center center;
-  background-repeat: no-repeat;
+  .toolbar-ios ion-title {
+    transform: translate(-12%,0);
+  }
+
 
   ion-content {
 
+    .item-ios.item-block .item-inner {
+      border-bottom: none !important;
+    }
 
     .form {
       display: block;
@@ -29,7 +33,7 @@ page-about {
       text-align: justify;
     }
 
-   
+
 
     .card {
       margin-top: 115%;
@@ -47,6 +51,10 @@ page-about {
   }
 
   .content-md {
+    background-color: #F7F7F7;
+  }
+
+  .content-ios {
     background-color: #F7F7F7;
   }
 
